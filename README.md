@@ -9,6 +9,17 @@ A simple exercise in pipeline release/deployment design for a xyz SaaS company.
 To use this repository you will need to read through [mingrammer/diagrams](https://github.com/mingrammer/diagrams) via
 [getting started](https://github.com/mingrammer/diagrams/blob/master/README.md#getting-started).
 
+### Using pip (pip3)
+```
+pip install -r requirements.txt
+```
+
+### How to generate diagrams
+```
+python3 infrastructure.py
+python3 pipeline.py
+```
+
 ## Company SaaS Pipeline
 ![alt text](company_saas_pipeline.png)
 
