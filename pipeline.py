@@ -29,4 +29,4 @@ with Diagram("Company SAAS Pipeline", show=False):
     Infrastructure_Pipeline = merge >> Edge(label="SaaS infrastructure code\n i.e. helm code, kubernetes manifests, values.yaml etc.\n ") >> \
         saas_manifests_repo >> Edge(label="Update kubernetes manifest\n ")
     argocd >> Edge(label="Sync helm/manifests/values state with EKS\n ") << saas_manifests_repo
-    eks << Edge(label="Deploy helm/manifests/vaules updates to EKS\n ") << argocd
+    eks << Edge(label="Deploy helm/manifests/values updates to EKS\n ") << argocd
